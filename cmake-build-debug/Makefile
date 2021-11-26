@@ -128,6 +128,19 @@ ALGORITHM/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ALGORITHM.dir\build.make CMakeFiles/ALGORITHM.dir/build
 .PHONY : ALGORITHM/fast
 
+#=============================================================================
+# Target rules for targets named scratches
+
+# Build rule for target.
+scratches: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scratches
+.PHONY : scratches
+
+# fast build rule for target.
+scratches/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scratches.dir\build.make CMakeFiles/scratches.dir/build
+.PHONY : scratches/fast
+
 Sort_algo/quick_sort.obj: Sort_algo/quick_sort.cpp.obj
 .PHONY : Sort_algo/quick_sort.obj
 
@@ -152,6 +165,30 @@ Sort_algo/quick_sort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ALGORITHM.dir\build.make CMakeFiles/ALGORITHM.dir/Sort_algo/quick_sort.cpp.s
 .PHONY : Sort_algo/quick_sort.cpp.s
 
+scratches.obj: scratches.cpp.obj
+.PHONY : scratches.obj
+
+# target to build an object file
+scratches.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scratches.dir\build.make CMakeFiles/scratches.dir/scratches.cpp.obj
+.PHONY : scratches.cpp.obj
+
+scratches.i: scratches.cpp.i
+.PHONY : scratches.i
+
+# target to preprocess a source file
+scratches.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scratches.dir\build.make CMakeFiles/scratches.dir/scratches.cpp.i
+.PHONY : scratches.cpp.i
+
+scratches.s: scratches.cpp.s
+.PHONY : scratches.s
+
+# target to generate assembly for a file
+scratches.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scratches.dir\build.make CMakeFiles/scratches.dir/scratches.cpp.s
+.PHONY : scratches.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,9 +198,13 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ALGORITHM
+	@echo ... scratches
 	@echo ... Sort_algo/quick_sort.obj
 	@echo ... Sort_algo/quick_sort.i
 	@echo ... Sort_algo/quick_sort.s
+	@echo ... scratches.obj
+	@echo ... scratches.i
+	@echo ... scratches.s
 .PHONY : help
 
 

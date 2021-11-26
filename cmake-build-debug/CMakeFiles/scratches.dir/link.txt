@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\scratches.dir/objects.a
+C:\MinGW\mingw64\bin\ar.exe cr CMakeFiles\scratches.dir/objects.a @CMakeFiles\scratches.dir\objects1.rsp
+C:\MinGW\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\scratches.dir/objects.a -Wl,--no-whole-archive -o scratches.exe -Wl,--out-implib,libscratches.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\scratches.dir\linklibs.rsp

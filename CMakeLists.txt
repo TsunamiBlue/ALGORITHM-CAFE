@@ -5,3 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(ALGORITHM
         "Sort algo/quick sort.cpp")
+
+add_executable(scratches scratches.cpp)
