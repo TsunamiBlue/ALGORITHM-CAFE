@@ -7,3 +7,4 @@ add_executable(ALGORITHM
         "Sort algo/quick sort.cpp")
 
 add_executable(scratches scratches.cpp)
+add_executable(simplecoinDP "DP algo/simplecoinDP.cpp")

@@ -53,4 +53,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ALGORITHM.dir/DependInfo.cmake"
   "CMakeFiles/scratches.dir/DependInfo.cmake"
+  "CMakeFiles/simplecoinDP.dir/DependInfo.cmake"
   )

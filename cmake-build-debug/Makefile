@@ -141,6 +141,43 @@ scratches/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\scratches.dir\build.make CMakeFiles/scratches.dir/build
 .PHONY : scratches/fast
 
+#=============================================================================
+# Target rules for targets named simplecoinDP
+
+# Build rule for target.
+simplecoinDP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 simplecoinDP
+.PHONY : simplecoinDP
+
+# fast build rule for target.
+simplecoinDP/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simplecoinDP.dir\build.make CMakeFiles/simplecoinDP.dir/build
+.PHONY : simplecoinDP/fast
+
+DP_algo/simplecoinDP.obj: DP_algo/simplecoinDP.cpp.obj
+.PHONY : DP_algo/simplecoinDP.obj
+
+# target to build an object file
+DP_algo/simplecoinDP.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simplecoinDP.dir\build.make CMakeFiles/simplecoinDP.dir/DP_algo/simplecoinDP.cpp.obj
+.PHONY : DP_algo/simplecoinDP.cpp.obj
+
+DP_algo/simplecoinDP.i: DP_algo/simplecoinDP.cpp.i
+.PHONY : DP_algo/simplecoinDP.i
+
+# target to preprocess a source file
+DP_algo/simplecoinDP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simplecoinDP.dir\build.make CMakeFiles/simplecoinDP.dir/DP_algo/simplecoinDP.cpp.i
+.PHONY : DP_algo/simplecoinDP.cpp.i
+
+DP_algo/simplecoinDP.s: DP_algo/simplecoinDP.cpp.s
+.PHONY : DP_algo/simplecoinDP.s
+
+# target to generate assembly for a file
+DP_algo/simplecoinDP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simplecoinDP.dir\build.make CMakeFiles/simplecoinDP.dir/DP_algo/simplecoinDP.cpp.s
+.PHONY : DP_algo/simplecoinDP.cpp.s
+
 Sort_algo/quick_sort.obj: Sort_algo/quick_sort.cpp.obj
 .PHONY : Sort_algo/quick_sort.obj
 
@@ -199,6 +236,10 @@ help:
 	@echo ... rebuild_cache
 	@echo ... ALGORITHM
 	@echo ... scratches
+	@echo ... simplecoinDP
+	@echo ... DP_algo/simplecoinDP.obj
+	@echo ... DP_algo/simplecoinDP.i
+	@echo ... DP_algo/simplecoinDP.s
 	@echo ... Sort_algo/quick_sort.obj
 	@echo ... Sort_algo/quick_sort.i
 	@echo ... Sort_algo/quick_sort.s

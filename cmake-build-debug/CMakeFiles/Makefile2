@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = D:\ALGORITHM\cmake-build-debug
 # The main recursive "all" target.
 all: CMakeFiles/ALGORITHM.dir/all
 all: CMakeFiles/scratches.dir/all
+all: CMakeFiles/simplecoinDP.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,6 +74,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/ALGORITHM.dir/clean
 clean: CMakeFiles/scratches.dir/clean
+clean: CMakeFiles/simplecoinDP.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -126,6 +128,32 @@ scratches: CMakeFiles/scratches.dir/rule
 CMakeFiles/scratches.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\scratches.dir\build.make CMakeFiles/scratches.dir/clean
 .PHONY : CMakeFiles/scratches.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/simplecoinDP.dir
+
+# All Build rule for target.
+CMakeFiles/simplecoinDP.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simplecoinDP.dir\build.make CMakeFiles/simplecoinDP.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simplecoinDP.dir\build.make CMakeFiles/simplecoinDP.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\ALGORITHM\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target simplecoinDP"
+.PHONY : CMakeFiles/simplecoinDP.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/simplecoinDP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\ALGORITHM\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/simplecoinDP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\ALGORITHM\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/simplecoinDP.dir/rule
+
+# Convenience name for target.
+simplecoinDP: CMakeFiles/simplecoinDP.dir/rule
+.PHONY : simplecoinDP
+
+# clean rule for target.
+CMakeFiles/simplecoinDP.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simplecoinDP.dir\build.make CMakeFiles/simplecoinDP.dir/clean
+.PHONY : CMakeFiles/simplecoinDP.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
